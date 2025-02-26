@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB (Local Machine)
-const localMongoURI = 'mongodb://localhost:27017/clean';
+const localMongoURI = 'mongodb+srv://geetika:Geetika@2005@cluster0.xf42d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(localMongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB on local machine'))
     .catch((err) => console.error('MongoDB connection error:', err));
